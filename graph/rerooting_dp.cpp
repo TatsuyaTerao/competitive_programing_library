@@ -25,8 +25,8 @@ struct Rerooting {
     }
 
     void add_edge_bi(int s, int t, const U &d, const U &e) {
-        g[s].emplace_back((Edge) {t, d, ident, ident});
-        g[t].emplace_back((Edge) {s, e, ident, ident});
+        g[s].emplace_back((Edge) {t, d, ident});
+        g[t].emplace_back((Edge) {s, e, ident});
     }
 
     void rec(int v, int par) {
