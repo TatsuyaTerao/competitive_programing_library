@@ -231,9 +231,8 @@ void solve() {
         rerooting.add_edge(a, b, 1);
     }
     bc.init(600600);
-    rerooting.build();
-    rep(i, n) {
-        cout << rerooting.dp[i].fr << endl;
+    for(auto p: rerooting.build()) {
+        cout << p.fr << endl;
     }
 }
  
